@@ -7,7 +7,7 @@ This repo contains the code for the V_HR modality's encoder model. Besides the t
 
 - each DFDC video sample takes about 30s for the combined generation of its ST map and V_HR sequence. Hence, it is important to perform first complete run asap, in order to have all video samples' V_HR sequences generated and ready to be loaded.
 
-- training and evaluation of the encoder model (relevant code in `src/models.py` and `src/trainer.py`) require more attention and its code may need edits. A trial run of `main.py` up to the data loading stage (relevant code in `rhythmnet/inference.py` and `src/dataset.py`) has already been completed, so changes to these files are not expected.
+- training and evaluation of the encoder model (relevant code in `src/models.py` and `src/trainer.py`) require more attention and its code may need edits. A trial run of `main.py` up to the data loading stage (relevant code in `rhythmnet/inference.py` and `src/dataset.py`) has already been completed, so minimal changes to these files are expected.
 
 _Note: an optional `run.sh` file has been added to make running `main.py` easier with a short terminal command. This script file can be modified for your specific use case._
 
