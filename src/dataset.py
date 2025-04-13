@@ -23,6 +23,7 @@ class DFDC(Dataset):
         assert split in ['train', 'val', 'test'], f"Invalid split '{split}'"
         self.split = split
         self.video_paths, self.v_hr_seqs, self.labels = [], [], []
+        v_hr_model.eval()                                                   # set RhythmNet model to eval mode (disable dropout, batchnorm, etc.)
 
         for subset_dir in os.listdir(config.DFDC_PATH):
             if subset_dir in ['subset_05', 'subset_06', 'subset_07']:
