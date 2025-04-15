@@ -159,7 +159,8 @@ class DFD_Trainer:
     def train(self):
         """ Training routine for V_HR encoder model. """
         
-        for self.epoch in tqdm(range(1, config.EPOCHS + 1), desc="Epochs"):
+        pbar = tqdm(range(1, config.EPOCHS + 1), desc="Epochs")
+        for self.epoch in pbar:
             # training epoch
             self.model.train()
             self.train_epoch()
