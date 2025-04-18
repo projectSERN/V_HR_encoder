@@ -1,0 +1,5 @@
+learning_rate: 0.00013717918191047306
+lr_scheduler: cosine
+dropout_rate: 0.2108327504764659
+num_blocks: 6
+kernel_size: 3
